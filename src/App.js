@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
- function App() {
+function App() {
   const [todos, setTodos] = useState([]);
-  const [todoInput, setTodoInput] = useState('');
+  const [todoInput, setTodoInput] = useState("");
 
   const handleAddTodo = (event) => {
-    if ((event.key === 'Enter') && (todoInput !== '')) {
+    if (event.key === "Enter" && todoInput !== "") {
       setTodos([...todos, todoInput]);
-      setTodoInput('');
+      setTodoInput("");
     }
   };
 
@@ -30,8 +30,7 @@ import React, { useState } from 'react';
       <ul>
         {todos.map((todo, index) => (
           <li key={index}>
-            {todo}
-            {' '}
+            {todo}{" "}
             <button onClick={() => handleDeleteTodo(index)}>Delete</button>
           </li>
         ))}
@@ -40,4 +39,4 @@ import React, { useState } from 'react';
   );
 }
 
-export default App; 
+export default App;
