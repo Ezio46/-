@@ -10,9 +10,15 @@ div {
   text-align: center;
 }
 
-input {
+input#one {
   width: 100px;
-  background-color: antiquewhite
+  background-color: aquamarine;
+  border: none;
+}
+
+input#two {
+  width: 100px;
+  background-color: antiquewhite;
 }
 
 ul {
